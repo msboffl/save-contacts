@@ -1,0 +1,26 @@
+{
+  "name": "save-contacts",
+  "version": "0.0.1",
+  "description": "Save you contacts",
+  "keywords": [
+    "contacts"
+  ],
+  "homepage": "https://github.com/msboffl/save-contacts#readme",
+  "bugs": {
+    "url": "https://github.com/msboffl/save-contacts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msboffl/save-contacts.git"
+  },
+  "license": "MIT",
+  "author": "Mareedu Saibabu",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}
