@@ -5,14 +5,17 @@ import "./index.css";
 import App from "./App.tsx";
 import { Login } from "./pages/Login.tsx";
 import { Signup } from "./pages/Signup.tsx";
+import { AuthLayout } from "./layouts/AuthLayout.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route element={<AuthLayout />}>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   </StrictMode>
